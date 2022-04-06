@@ -1,0 +1,12 @@
+[submodule "OtelApiGateway"]
+	path = OtelApiGateway
+	url = https://github.com/riki-nitdgp/OtelApiGateway.git
+[submodule "user_service"]
+	path = user_service
+	url = https://github.com/riki-nitdgp/user_service.git
+[submodule "inventory"]
+	path = inventory
+	url = https://github.com/riki-nitdgp/inventory.git
+[submodule "rating_review_service"]
+	path = rating_review_service
+	url = https://github.com/riki-nitdgp/rating_review_service.git

@@ -47,6 +47,7 @@ services:
     container_name: user-service-cointainer
     environment:
       - OTEL_TRACES_EXPORTER=otlp
+      - OTEL_PROPAGATORS=b3
       - OTEL_EXPORTER_OTLP_ENDPOINT=http://otel-collector:4317
       - OTEL_RESOURCE_ATTRIBUTES=service.name=user-service
     ports:
@@ -62,6 +63,7 @@ services:
       dockerfile: ./OtelApiGateway/Dockerfile
     environment:
       - OTEL_TRACES_EXPORTER=otlp
+      - OTEL_PROPAGATORS=b3
       - OTEL_EXPORTER_OTLP_ENDPOINT=http://otel-collector:4317
       - OTEL_RESOURCE_ATTRIBUTES=service.name=api-gateway
     ports:
